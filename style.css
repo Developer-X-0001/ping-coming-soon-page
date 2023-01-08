@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    /* Primary */
+    --blue: hsl(223, 87%, 63%);
+    /* Secondary */
+    --paleblue: hsl(223, 100%, 88%);
+    --lightred: hsl(354, 100%, 66%);
+    --palegrayishblue: hsl(223, 31%, 85%);
+    /* Neutral */
+    --gray: hsl(0, 0%, 59%);
+    --verydarkblue: hsl(209, 33%, 12%);
+}
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Libre Franklin';
+}
+main {
+    text-align: center;
+    height: fit-content;
+}
+main h1 {
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 0;
+}
+main h1 span {
+    font-weight: 700;
+    color: black;
+}
+main .subscribe {
+    font-size: 20px;
+}
+main .form {
+    width: 100%;
+}
+main .form {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem ;
+}
+main .form input {
+    height: 3rem;
+    width: 25rem;
+    margin-top: 1rem;
+    padding: 0 0 0 1rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--palegrayishblue);
+}
+main .form input:focus {
+    outline: 2px solid var(--palegrayishblue);
+}
+main .form input::placeholder {
+    color: var(--palegrayishblue);
+}
+main .form form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+main .emailerror {
+    color: var(--lightred);
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 1.5rem;
+}
+main .form button {
+    height: 3rem;
+    width: 11rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 5px rgba(0, 0, 255, 0.1);
+    background-color: var(--blue);
+}
+main .illustration {
+    width: 40%;
+    margin: 3rem 0;
+}
+main .links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+main .links button {
+    margin-right: 1rem;
+    display: flex;
+    color: var(--blue);
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid var(--palegrayishblue);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+main .links button:hover {
+    background-color: var(--blue);
+    color: white;
+}
+main .copy {
+    color: var(--gray);
+    font-size: 12px;
+}
